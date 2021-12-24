@@ -353,3 +353,28 @@ Gallery
 Footer
 ===============
 */
+.footer {
+  background: var(--clr-grey-1);
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.social-icon {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-size: 2rem;
+}
+.social-icons a:hover {
+  color: var(--clr-primary-5);
+}
+.copyright {
+  letter-spacing: var(--spacing);
+  color: var(--clr-white);
+}
