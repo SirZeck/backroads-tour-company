@@ -457,6 +457,45 @@ Contact
 Gallery
 ===============
 */
+.gallery-img {
+  position: relative;
+  background: var(--clr-primary-5);
+}
+.gallery-photo {
+  transition: var(--transition);
+}
+.gallery-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  color: var(--clr-white);
+  transition: var(--transition);
+  opacity: 0;
+  cursor: pointer;
+}
+.gallery-photo:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+.gallery-icon:hover {
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .gallery-center {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img {
+    flex: 1 1 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .gallery-img {
+    flex: 1 1 25%;
+  }
+}
 
 /*
 =============== 
