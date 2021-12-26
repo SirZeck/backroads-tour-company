@@ -476,6 +476,8 @@ Gallery
 }
 .gallery-photo {
   transition: var(--transition);
+  height: 17rem;
+  object-fit: cover;
 }
 .gallery-icon {
   position: absolute;
@@ -488,11 +490,10 @@ Gallery
   opacity: 0;
   cursor: pointer;
 }
-.gallery-photo:hover {
-  opacity: 50%;
-  cursor: pointer;
+.gallery-img:hover .gallery-photo {
+  opacity: 0.5;
 }
-.gallery-icon:hover {
+.gallery-img:hover .gallery-icon {
   opacity: 1;
 }
 @media screen and (min-width: 768px) {
@@ -521,6 +522,7 @@ Footer
   padding-left: 2rem;
   padding-right: 2rem;
 }
+.footer-links,
 .social-icons {
   display: flex;
   justify-content: center;
@@ -528,10 +530,21 @@ Footer
   flex-wrap: wrap;
   gap: 1rem;
 }
+.footer-links a {
+  text-decoration: none;
+  color: var(--clr-white);
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+}
 .social-icon {
   text-decoration: none;
   color: var(--clr-white);
   font-size: 2rem;
+}
+.footer-links a:hover {
+  color: var(--clr-primary-5);
 }
 .social-icons a:hover {
   color: var(--clr-primary-5);
