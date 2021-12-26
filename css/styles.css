@@ -338,12 +338,12 @@ Featured Tours
 .tour-card {
   transition: var(--transition);
   background: var(--clr-grey-10);
-
+  box-shadow: var(--light-shadow);
   margin-bottom: 2rem;
 }
 .tour-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px rgba(0 0 0 / 10%);
+  transform: scale(1.02);
+  box-shadow: var(--dark-shadow);
 }
 .tour-img-container {
   position: relative;
